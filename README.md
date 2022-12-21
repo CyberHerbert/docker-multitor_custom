@@ -3,9 +3,9 @@
 This is an Alpine Docker image that runs multitor. Multitor creates a Proxy with multiple TOR instances wich are load-balanced. For detailed information about multitor, check out https://github.com/trimstray/multitor .
 
 # Build
-git clone https://github.com/evait-security/docker-multitor
+git clone https://github.com/CyberHerbert/docker-multitor_custom
 
-cd docker-multitor
+cd docker-multitor_custom
 
 docker build -t multitor .
 
