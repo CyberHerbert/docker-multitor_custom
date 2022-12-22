@@ -17,7 +17,7 @@ docker build -t multitor .
 docker run --rm -p 16379:16379 evait/multitor
 
 # Start 20 tor instances
-docker run --rm -e "TOR_INSTANCES=20" -p 16379:16379 evait/multitor 
+docker run --rm -e "TOR_INSTANCES=20" -p 16379:16379 cyberherbert/multitor-custom:latest 
 ```
 
 # Advance
@@ -26,7 +26,7 @@ You can also start the container interactively
 
 ```bash
 # run interactive
-docker run --name multitor -it -p 16379:16379 evait/multitor /bin/bash
+docker run --name multitor -it -p 16379:16379 cyberherbert/multitor-custom:latest /bin/bash
 # start multitor inside the container
 multitor --init 5 --user root --socks-port 9000 --control-port 9900 --proxy privoxy --haproxy
 ```
